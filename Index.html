@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team1Nonly | PUBG & BGMI Players</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="pubg-logo.png" alt="Team1Nonly Logo">
+                <span class="logo-text">Team1Nonly</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#tournaments">Tournaments</a></li>
+                    <li><a href="#teams">Teams</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="https://images.unsplash.com/photo-1602673221577-0b56d7ce446b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="PUBG BattleGround" class="hero-bg">
+
+        <div class="container">
+            <div class="hero-content">
+                <h1>DOMINATE THE BATTLEFIELD</h1>
+                <p>Join thousands of PUBG & BGMI players in our competitive community. Improve your skills, join
+                    tournaments, and climb the ranks to become the ultimate survivor.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Join Now</a>
+                    <a href="#" class="btn btn-outline">Watch Trailer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="playersCount">0</div>
+                    <div class="stat-label">Active Players</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="matchesCount">0</div>
+                    <div class="stat-label">Matches Daily</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="tournamentsCount">0</div>
+                    <div class="stat-label">Tournaments</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="winnersCount">0</div>
+                    <div class="stat-label">Champions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>WHY CHOOSE US</h2>
+                <p>We provide the ultimate platform for PUBG & BGMI players to showcase their skills and compete at the
+                    highest level.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Competitive Tournaments">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Competitive Tournaments</h3>
+                        <p>Join our daily and weekly tournaments with cash prizes and exclusive rewards for top
+                            performers.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Skill Training">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Skill Training</h3>
+                        <p>Access our exclusive training programs designed by pro players to improve your gameplay.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Team Finder">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Team Finder</h3>
+                        <p>Connect with players of similar skill levels to form squads and dominate the battleground
+                            together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section class="tournaments" id="tournaments">
+        <div class="container">
+            <div class="section-title">
+                <h2>UPCOMING TOURNAMENTS</h2>
+                <p>Check out our upcoming tournaments and register your squad to compete for amazing prizes.</p>
+            </div>
+            <div class="tournaments-container">
+                <div class="tournament-card">
+                    <div class="tournament-date">
+                        <div class="tournament-day">15</div>
+                        <div class="tournament-month">JUN</div>
+                    </div>
+                    <div class="tournament-details">
+                        <h3>ROYALE CHAMPIONSHIP</h3>
+                        <div class="tournament-prize">Prize Pool: $10,000</div>
+                        <div class="tournament-info">
+                            <div><i class="fas fa-users"></i> Squad (4v4)</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Online</div>
+                        </div>
+                        <a href="#" class="btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="tournament-card">
+                    <div class="tournament-date">
+                        <div class="tournament-day">22</div>
+                        <div class="tournament-month">JUN</div>
+                    </div>
+                    <div class="tournament-details">
+                        <h3>SOLO SHOWDOWN</h3>
+                        <div class="tournament-prize">Prize Pool: $5,000</div>
+                        <div class="tournament-info">
+                            <div><i class="fas fa-user"></i> Solo</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Online</div>
+                        </div>
+                        <a href="#" class="btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams" id="teams">
+        <div class="container">
+            <div class="section-title">
+                <h2>TOP TEAMS</h2>
+                <p>Meet some of our top performing teams in the competitive PUBG & BGMI scene.</p>
+            </div>
+            <div class="teams-slider">
+                <div class="team-card">
+                    <div class="team-logo">
+                        <img src="pubg-logo.png" alt="Team Reckoning">
+                    </div>
+                    <div class="team-info">
+                        <h3>TEAM RECKONING</h3>
+                        <p>Season 5 Champions</p>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Member 1">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Member 2">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Member 3">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Member 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <img src="pubg-logo.png" alt="Team Phantom">
+                    </div>
+                    <div class="team-info">
+                        <h3>TEAM PHANTOM</h3>
+                        <p>Season 4 Champions</p>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Member 1">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Member 2">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Member 3">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Member 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <img src="pubg-logo.png" alt="Team Dominators">
+                    </div>
+                    <div class="team-info">
+                        <h3>TEAM DOMINATORS</h3>
+                        <p>Season 3 Champions</p>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Member 1">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Member 2">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Member 3">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="Member 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-logo">
+                        <img src="pubg-logo.png" alt="Team Vanguard">
+                    </div>
+                    <div class="team-info">
+                        <h3>TEAM VANGUARD</h3>
+                        <p>Season 2 Champions</p>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Member 1">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Member 2">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Member 3">
+                            </div>
+                            <div class="team-member">
+                                <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Member 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>READY TO JOIN THE BATTLE?</h2>
+            <p>Register now to get access to exclusive tournaments, training programs, and connect with thousands of
+                players worldwide.</p>
+            <a href="#" class="btn">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Team1Nonly</h3>
+                    <p style="margin-bottom: 10px;">The ultimate platform for PUBG & BGMI players to compete, improve,
+                        and connect.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#stats">Stats</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#teams">Teams</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Tournament Rules</a></li>
+                        <li><a href="#">Leaderboards</a></li>
+                        <li><a href="#">Training Guides</a></li>
+                        <li><a href="#">Streaming Tips</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="mailto:info@battlegroundmasters.com">1nonlythecoder@gmail.com</a></li>
+                        <li><a href="tel:+1234567890">+91 82874-93774</a></li>
+                        <li><a href="#">Discord Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Team1Nonly. All rights reserved. PUBG and BGMI are registered trademarks of their
+                respective owners.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
